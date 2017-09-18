@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>MCU - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>MCU</h1>
+            </div>
+
+
+    <div class="s-content">
+        <h2 id="page_Overview">Overview</h2>
+<p>The <strong>Texas Instruments CC2650</strong> device is a wireless MCU targeting <em>Bluetooth</em>, <em>6LoWPAN</em> and <em>ZigBee®</em>, and ZigBee RF4CE remote control applications.<br />
+The device is a member of the CC26xx family of cost-effective, ultralow power, 2.4-GHz RF devices. Very low active RF and MCU current and low-power mode current consumption provide excellent battery lifetime and allow for operation on small coin cell batteries and in energy-harvesting applications. The CC2650 device contains a 32-bit ARM Cortex-M3 processor that runs at 48 MHz as the main processor and a rich peripheral feature set that includes a unique ultralow power sensor controller. This sensor controller is ideal for interfacing external sensors and for collecting analog and digital data.</p>
+<p>The Bluetooth Low Energy controller and the IEEE 802.15.4 MAC are embedded into ROM and are partly running on a separate ARM Cortex-M0 processor. This architecture improves overall system performance and power consumption and frees up flash memory for the application.</p>
+<h2 id="page_Block_Diagram">Block Diagram</h2>
+<p><a href="../img/cc2650_block_diagram.gif" target="_blank"><img style="width:500px; " src="../img/cc2650_block_diagram.gif"></a></p>
+<h2 id="page_Documentation_Support">Documentation Support</h2>
+<p>Here you can find the <a href="http://www.ti.com/product/CC2650/datasheet" class="external">TI CC2650 Datasheet</a></p>
+<p>To receive notification of documentation updates, navigate to the device product folder on <a href="http://www.ti.com/product/CC2650" class="external">ti.com (CC2650)</a>.<br />
+In the upper right corner, click on Alert me to register and receive a weekly digest of any product information that has changed. For change details, review the revision history included in any revised document. The current documentation that describes the CC2650 devices, related peripherals, and other technical collateral is listed in the following.</p>
+<h2 id="page_Pin_Diagram_RGZ_Package">Pin Diagram – RGZ Package</h2>
+<p><a href="../img/cc2650_pinout.png" target="_blank"><img style="width:500px; " src="../img/cc2650_pinout.png"></a></p>
+<h2 id="page_RF_Core">RF Core</h2>
+<p>The RF Core contains an <strong>ARM Cortex-M0</strong> processor that interfaces the analog RF and base-band circuitries, handles data to and from the system side, and assembles the information bits in a given packet structure.<br />
+The RF core offers a high level, command-based API to the main CPU. The RF core is capable of autonomously handling the time-critical aspects of the radio protocols (802.15.4 RF4CE and ZigBee, Bluetooth Low Energy) thus offloading the main CPU and leaving more resources for the user application. The RF core has a dedicated 4-KB SRAM block and runs initially from separate ROM memory. The ARM Cortex-M0 processor is not programmable by customers.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_Reference/Resources.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_Reference/Onboard_Sensors.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>

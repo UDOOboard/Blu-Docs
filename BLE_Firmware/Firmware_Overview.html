@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Firmware Overview - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item Nav__item--active'><a href="../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Firmware Overview</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>When <strong>UDOO BLU</strong> is powered on, after a brief initialization process, it enters in advertising state and starts sending beacons every <em>1000 ms</em>.<br />
+At this stage it is possible to connect to UDOO BLU from other devices, and optionally to perform the pairing and/or bonding operations. During all these stages UDOO BLU works in slave mode, while the other device works in master mode.<br />
+During the connection stage UDOO BLU sends  &quot;non-connectable&quot; beacons. In other words, UDOO BLU continues to announce its presence, but it won't be possible to establish further connections to other devices. After the current connection, UDOO BLU returns to its normal advertising stage, and can accept again a new connection.<br />
+The flowchart of the application is shown below.</p>
+<img src="../img/blu_firmware_flowchart.png" alt="UDOO BLU application flowchart" class="img-responsive" >
+<br/>
+<p>Users can manage the the UDOO BLU by the two buttons (<code>BTN1</code> and <code>BTN2</code>):</p>
+<ul>
+<li>Pressing <code>BTN2</code> for at least <em>2 seconds</em> terminates the current connection.</li>
+<li>Pressing <code>BTN1</code> and <code>BTN2</code> simultaneously and for at least <em>3 seconds</em> erases all the keys stored in memory (i.e. delete all bondings).
+To know the current status of UDOO BLU user can check the LEDs, as shown in the table below.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>LED</th>
+<th>Action</th>
+<th>UDOO BLU's status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Green, Yellow, Red</td>
+<td>Blink 1 time in sequence</td>
+<td>Ready. Initialization end</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>Blink 3 times</td>
+<td>Advertisement mode start</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>Blink 3 times</td>
+<td>Connection established</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Blink 3 times</td>
+<td>Connection error</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Blink 2 times</td>
+<td>Connection end</td>
+</tr>
+<tr>
+<td>Green + Yellow + Red</td>
+<td>Blink 1 time at the same time</td>
+<td>Bounding reset</td>
+</tr>
+</tbody>
+</table>
+<h2 id="page_Pairing_and_Bonding">Pairing and Bonding</h2>
+<p>Through the pairing, UDOO BLU performs authentication with another device (already connected) and generates the keys that will then be used for encrypt the connection to that device. The characteristics of the board (no keyboard and no display) do not allow to be protected against MITM (man in the middle). The key exchange it's based on the &quot;just works&quot; method, which does not require password.</p>
+<p>The bonding allows user to store the keys in the non-volatile memory, so that they can be reused in subsequent connection skipping the step of pairing - LTK (long term key). UDOO BLU can store up to 10 LTK. User can also delete all LTK, but in that case it  needs to redo the pairing with all the devices. The new keys will not necessarily be the same as the old. To delete the keys is necessary that the UDOO BLU is not connected to other devices. Finally, since UDOO BLU acts as a slave, the pairing and the bonding processes must be initiated by the master.</p>
+<h2 id="page_Official_firmware_binaries_released">Official firmware binaries released</h2>
+<p>You can find the official firmwares released in the UDOO github at the following links:</p>
+<ul>
+<li>
+<a href="https://udooboard.github.io/UDOOBlu/OADFirmware/v1.0A.bin" class="external"><strong>1.0A</strong></a>
+</li>
+<li>
+<a href="https://udooboard.github.io/UDOOBlu/OADFirmware/v1.0B.bin" class="external"><strong>1.0B</strong></a>
+</li>
+<li>
+<a href="https://udooboard.github.io/UDOOBlu/OADFirmware/v1.0C.bin" class="external"><strong>1.0C</strong></a>
+</li>
+</ul>
+<h4 id="page_Firmwares_description">Firmwares description</h4>
+<table>
+<thead>
+<tr>
+<th>SENSE.A (1.0A)</th>
+<th>NO SENSE.B (1.0B)</th>
+<th>SENSE.C (1.0C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+</tr>
+<tr>
+<td>LEDs</td>
+<td>LEDs</td>
+<td>LEDs</td>
+</tr>
+<tr>
+<td>Accelerometer &amp; Magnetometer</td>
+<td>Temperature</td>
+<td>Accelerometer</td>
+</tr>
+<tr>
+<td>Gyroscope</td>
+<td>Barometer</td>
+<td>Magnetometer</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Humidity</td>
+<td>Gyroscope</td>
+</tr>
+<tr>
+<td>Barometer</td>
+<td>Ambient Light</td>
+<td>OAD</td>
+</tr>
+<tr>
+<td>OAD</td>
+<td>OAD</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../BLE_Firmware/BLE_Overview.html">Previous</a></li>            <li class=Pager--next><a href="../BLE_Firmware/Firmware_Resources.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>

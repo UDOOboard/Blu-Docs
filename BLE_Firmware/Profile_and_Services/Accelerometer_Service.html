@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Accelerometer Service - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item Nav__item--active'><a href="../../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Accelerometer Service</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>This service manages the accelerometer <strong>Freescale FXOS8700CQ</strong>. In addition to the punctual and periodic reading of the acceleration value, it is possible to enable notifications related to particular events.</p>
+<p>The service provides the following features and descriptors:</p>
+<ul>
+<li>
+<strong>Acceleration</strong>: Returns the value of the acceleration along the three axes. The acceleration of each axis is stored in a field of <em>two bytes</em>, but only the <em>last 14 bits</em> contain the actual value. The three axes are stored in the following order: <code>X</code>, <code>Y</code>, <code>Z;</code> the least significant byte of each axis is transmitted first (see the Notes in the <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes page</a>).
+<ul>
+<li>
+<strong>Characteristic Client Configuration</strong>: see description in <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes page</a>.</li>
+</ul>
+</li>
+<li>
+<strong>Enable</strong>: see description in <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes page </a>.</li>
+<li>
+<strong>Full Scale Range</strong>: It Specifies the scale for measuring acceleration. Are allowed only three values (<code>0</code>, <code>1</code>, <code>2</code>). It determine the reading resolution, as shown in Table below (where g = 9.80665 m / s²).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Full Scale Range</th>
+<th>Full Scale</th>
+<th>Resolution[m<em>g</em>]</th>
+<th>Resolution[bit/<em>g</em>]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2<em>g</em></td>
+<td>0,244</td>
+<td>4096</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4<em>g</em></td>
+<td>0,488</td>
+<td>2048</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8<em>g</em></td>
+<td>0,977</td>
+<td>1024</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>Notifind Period</strong>: see description in <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes page</a>.</p>
+</li>
+<li>
+<p><strong>Detection Type</strong>: It specifies the detection type of the sensor. Following the allowed values:</p>
+<ul>
+<li>0: disabled;</li>
+<li>1: linear acceleration;</li>
+<li>2: inclination;</li>
+</ul>
+</li>
+<li>
+<p><strong>Detection Flags</strong>: is a <em>bitfield</em>. If each bit is set to 1 has the effect shown in Table below.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Bit</th>
+<th>Name</th>
+<th>Meaning</th>
+<th>Detection Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Use_Ref_Vals</td>
+<td>If 1, uses the X, Y and Z reference as initial values, otherwise it uses the current ones.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Upd_Refs</td>
+<td>If 1, it updates the values values at the time of the event, otherwise it always uses the initial ones.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Enable_X</td>
+<td>If 1, the X axis is used for detection.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Enable_Y</td>
+<td>If 1, the Y axis is used for detection.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Enable_Z</td>
+<td>If 1, the Z axis is used for detection.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-7</td>
+<td>-</td>
+<td>Not used</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<strong>Detection threshold</strong>: Sets the notification; the value is interpreted as a function of Detection Type feature.</li>
+<li>
+<strong>Reference X, Y Reference, Reference Z</strong>: three <em>16-bit integers</em> that represent each of the initial value of reference on which to calculate the deviation. The resolution is set to Full Scale Range. They are used only when Detection Type is <code>1</code>.</li>
+</ul>
+<p>Whenever Detection Type is changed, the Flags Detection values and Detection Threshold are updated with the default values, reported in the Table below.</p>
+<table>
+<thead>
+<tr>
+<th>Detection Type</th>
+<th>Detection Flag</th>
+<th>Det. Threshold</th>
+<th>Reference X,Y,Z</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0, 0, 0</td>
+<td>No detection</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0x0C</td>
+<td>300</td>
+<td>0, 0, 0</td>
+<td>Acceleration of about 0.3g in X and Y directions.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>261</td>
+<td>0, 0, 0</td>
+<td>Inclination of about 15°.</td>
+</tr>
+</tbody>
+</table>
+<p>The acceleration conversion from integer values of the characteristic Acceleration with the actual values in m<em>g</em> can be obtained by multiplying each value read for the resolution.</p>
+<h3 id="page_Events_Detection">Events Detection</h3>
+<p>The characteristics Detection Type, Detection Flags, Detection Threshold, Reference X, Y, and Z define the events detectable by the accelerometer.<br />
+To enable this function user needs to turn enable the sensor(Enable = 1) and that Detection Type has one of the values indicated above.<br />
+To get notifications you must enable Characteristic Client Configuration (CCC) descriptor through. It should be noted that setting CCC to <code>1</code> (i.e. 2 for directions) are also activated periodic notifications. Is necessary to reset the value of Notifind Period if these are not desired. The tale below summarizes the periodic notifications and events settings. Regarding Detection Flags, the three bits Enable_X / Y / Z allow to limit the detection only to some axes. However, if you are all set to <code>0</code>, the detection does not occur.</p>
+<table>
+<thead>
+<tr>
+<th>Acceleration CCC</th>
+<th>Notifind Period</th>
+<th>Detection Type</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>No notifications</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>No notifications</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&gt;0</td>
+<td>0</td>
+<td>Periodical notifications</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>&gt;0</td>
+<td>Events notifications</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&gt;0</td>
+<td>&gt;0</td>
+<td>Periodical and Event notifications</td>
+</tr>
+</tbody>
+</table>
+<p>As for the inclination, the t value to be included in the Detection Threshold is related angle α that is to be detected by the following formula:</p>
+<pre><code>t = | 2 sin (α / 2) | * 1000
+</code></pre>
+<p>For example, to detect an inclination of 15° or more will have to be</p>
+<pre><code>t = | 2 sin (7.5°) | * 1000 = 261
+</code></pre>
+<p>Note: the value to be entered in the Detection Threshold is independent of the value of Full Scale Range.</p>
+<p>Note: Currently, the three LEDs are used as visual notification for event detection:</p>
+<ul>
+<li>Green LED on: detection activated (i.e. Detection Type ≠ 0).</li>
+<li>Yellow LED: Switches to any detection of a linear acceleration event.</li>
+<li>Red LED: Switches to any detection of an inclination event.</li>
+</ul>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">Previous</a></li>            <li class=Pager--next><a href="../../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>

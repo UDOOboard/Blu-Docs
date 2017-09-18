@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>LEDs Service - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item Nav__item--active'><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>LEDs Service</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>This service manages the three LEDs on the board.</p>
+<p>There are three characteristics, one for each LED, with identical structure and functions.</p>
+<p>As example we demonstrate here the one for the <strong>Green LED</strong>. The Green Led characteristic presents a Value attribute divided into two parts, each <em>one byte long</em>. The first part (called <code>STATUS</code>) pilot ignition of the LEDs. It is composed of two bits:</p>
+<ul>
+<li>
+<strong>ONOFF</strong> (bit 0): the LED status:
+<ul>
+<li>1 - LED ON,</li>
+<li>0 - LED OFF.</li>
+</ul>
+</li>
+<li>
+<strong>BLINK</strong> (bit 1): the LED blink:
+<ul>
+<li>1 - blink active</li>
+<li>0 - blink inactive.</li>
+</ul>
+</li>
+</ul>
+<p>The bit <strong>BLINK</strong> overcomes the bit <strong>ONOFF</strong>. So if BLINK = 1, the ONOFF value is ignored.<br />
+The other bits of the STATUS field are not significant. The default value is 0x00.</p>
+<p>The second field (<code>BLINK_PERIOD</code>) defines the length of each period of on / off during the flashing, in units of 100 ms. <code>0</code> produces the cancellation of the flashing and the LED is switched off. The default value is <code>5</code> (for a blink cycle equal to 1 second).<br />
+For example, to flash the Green LED every 200 ms you will need to write in the attribute Value <code>0x0302</code>, 0x01** to keep it turned on and to turn it off 0x00** (where the sign '*' indicates that the value is not significant).</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../BLE_Firmware/Profile_and_Services/GPIO_Service.html">Previous</a></li>            <li class=Pager--next><a href="../../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>

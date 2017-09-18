@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Common Characteristics and Notes - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Common Characteristics and Notes</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>This section contains the description of the custom BLE Profile and the various services included in it.</p>
+<h1 id="page_GATT_Description_Table">GATT Description Table</h1>
+<p>You can find the [GATT Description Table] here.</p>
+<h1 id="page_Common_Characteristics_and_Descriptors">Common Characteristics and Descriptors</h1>
+<p>Some features and some descriptors are common to most services. To avoid repetition, they are described in this section. Any variations will be described where necessary.</p>
+<h3 id="page_User_Description">User Description</h3>
+<p>It's a descriptor that contains a short text string. It's useful to identify the associated feature, especially when debugging and testing.<br />
+This descriptor is defined by a specific standard Bluetooth GATT, <a href="https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.descriptor.gatt.characteristic_user_description.xml" class="external">Characteristic User Description</a>, and has not been modified.<br />
+All the implemented features include this descriptor.</p>
+<h3 id="page_Characteristic_Client_Configuration_CCC">Characteristic Client Configuration (CCC)</h3>
+<p>It's a descriptor that enables notifications / instructions for the related feature.<br />
+The time interval is usually specified in the characteristic <strong>Notifind Period</strong>.<br />
+This descriptor is defined by a specific standard Bluetooth GATT, <a href="https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.descriptor.gatt.client_characteristic_configuration.xml" class="external">Characteristic Client Configuration</a>, and has not been modified.</p>
+<h3 id="page_Enable">Enable</h3>
+<p>It's a feature with a Boolean field that enables (<code>1</code>) or disables (<code>0</code>) the sensor related to the service it belongs.</p>
+<ul>
+<li>
+<code>0</code> is for <strong>Disabled</strong>
+</li>
+<li>
+<code>1</code> is for <strong>Enabled</strong>
+</li>
+</ul>
+<p>The default value is usually <code>0</code>.</p>
+<p>It's necessary to enable the sensor before using it.</p>
+<p>Reading the value of a disabled sensor returns <code>0</code>. It's a custom feature with a <em>128-bit UUID</em>.</p>
+<h3 id="page_Notifind_Period">Notifind Period</h3>
+<p>It's a feature used to specify the time interval for notifications and / or directions. It's expressed in units of 10 ms. The Value attribute is a <em>16 bits unsigned integer</em>.<br />
+Allowed values are between <code>0</code> and <code>6000</code> (maximum interval: 60s ).<br />
+The notification / indication is automatically disabled when <code>0</code> is written.<br />
+The default value is <code>10</code> (or 100 ms).</p>
+<h1 id="page_Notes_on_the_values_of_the_UUID_and_attributes">Notes on the values of the UUID and attributes</h1>
+<h3 id="page_16_and_128_bit_UUID">16 and 128 bit UUID</h3>
+<p>The UUID values shown in the tables are always indicated by 16-bit (short UUID).
+In fact, all the custom services and attributes are represented by 128 bits.
+For these custom services / attributes we defined a base UUID:</p>
+<pre><code>0xD7720000-79C6-452F-994C-9829DA1A4229 (base UUID)
+</code></pre>
+<p>To switch from a 16-bit UUID to the corresponding 128-bit value we need to replace the third and fourth bytes with the short UUID value.
+For example, the short UUID of the of the temperature Resolution characteristic service is <code>0x69BB</code>, therefore its full UUID is:</p>
+<pre><code>0xD77269BB-79C6-452F-994C-9829DA1A4229
+</code></pre>
+<p>In the [table of attributes], shorts UUID of personalized services are indicated by an asterisk (*).</p>
+<h3 id="page_Inversion_of_attribute_bytes">Inversion of attribute bytes</h3>
+<p>The CC2650 microcontroller operates in little-endian mode, but the transmission is performed in big-endian (network byte order) mode.
+For that reason, the values of the attributes longer than 1 byte are transmitted in the reverse order: the least significant byte (LSB)  is transmitted as first and the most significant bit (MSB) as last. In values composed by multiple fields, the field order is preserved, but longer fields than byte are also inverted. Take for example:</p>
+<ul>
+<li>The attribute GATT Primary Service Declaration, whose value is <code>0x1800</code>, but is transmitted as <code>00:18</code>.</li>
+<li>The Value attribute of GreenLed characteristic, composed by the  two &quot;status fields&quot; and &quot;blink_period&quot; - default values are <code>0x00</code> and <code>0x05</code>: they are transmitted as <code>00:05</code>.</li>
+<li>The Accelerometer service attributes, consisting of three fields (X, Y, and Z) of two bytes each, are transmitted as XLSB: XMSB: YLSB: YMSB: ZLSB: ZMSB.</li>
+</ul>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../BLE_Firmware/Firmware_Resources.html">Previous</a></li>            <li class=Pager--next><a href="../../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>

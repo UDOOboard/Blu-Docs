@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>GPIO Service - UDOO Blu Docs</title>
+    <meta name="description" content="UDOO Blu Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon-navy.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="https://www.udoo.org/docs/img/logos/docs.png"> 
+<a class="Navbar__brand" href="../../index.html">
+UDOO Blu Documentation</a>
+
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../../Hardware_Reference/MCU.html">MCU</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Onboard_Sensors.html">Onboard Sensors</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Other_Interfaces.html">Other Interfaces</a></li><li class='Nav__item '><a href="../../Hardware_Reference/Power_Management.html">Power Management</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Firmware</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/BLE_Overview.html">BLE Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Overview.html">Firmware Overview</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Resources.html">Firmware Resources</a></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Profile and Services</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Generic_Access_and_Device_Information_Services.html">Generic Access and Device Information Services</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Sensor_Service.html">Sensor Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Button_Service.html">Button Service</a></li><li class='Nav__item Nav__item--active'><a href="../../BLE_Firmware/Profile_and_Services/GPIO_Service.html">GPIO Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">LEDs Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Accelerometer_Service.html">Accelerometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Magnetometer_Service.html">Magnetometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Gyroscope_Service.html">Gyroscope Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Temperature_Service.html">Temperature Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Barometer_Service.html">Barometer Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Humidity_Service.html">Humidity Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Ambient_Light_Service.html">Ambient Light Service</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services.html">Connection Control and OAD Services</a></li></ul></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(OAD).html">Firmware Update (OAD)</a></li><li class='Nav__item '><a href="../../BLE_Firmware/Firmware_Update_(Serial).html">Firmware Update (Serial)</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>BLE Libraries and Tools</a><ul class='Nav'><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App.html">UDOO BLU Manager Android App</a></li><li class='Nav__item '><a href="../../BLE_Libraries_and_Tools/BLE_Libraries.html">BLE Libraries</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>GPIO Service</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>This service can check the <code>8 GPIO Pins</code> (A0, A1, A2, A3, A4, A5, D6, D7).</p>
+<p>Check the <a href="../../Hardware_Reference/Pinout.html">Pinout page</a> to locate this Pins in the Pinout of the UDOO BLU.</p>
+<p>They can work as:</p>
+<ul>
+<li>
+<a href="https://en.wikipedia.org/wiki/General-purpose_input/output" class="external"><em>Digital</em> Pins in <em>Input or Output</em> mode</a>.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Pulse-width_modulation" class="external"><em>PWM Output</em></a> signal.</li>
+<li>
+<em>Analog Input</em> voltage data (Only the Pins: A0, A1, A2, A3, A4, A5)</li>
+</ul>
+<p>User can manage these functions by the following characteristics:</p>
+<h3 id="page_Pin_Mode">Pin Mode</h3>
+<p>exposes a Value attribute composed by an <em>unsigned integer 16 bits long</em>. It's logically divided in 8 2-bit pairs. Each pair represents the pin operating mode.</p>
+<p>The following tables shows respectively the mapping of bit pairs of each pin, and the different operation modes.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Bit Pair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A0</td>
+<td>0:1</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>2:3</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>4:5</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>6:7</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>8:9</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>10:11</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>12:13</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>14:15</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Pair Value</th>
+<th>Pin Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td>Digital Output</td>
+</tr>
+<tr>
+<td>01</td>
+<td>Digital Input</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Analog</td>
+</tr>
+<tr>
+<td>11</td>
+<td>PWM</td>
+</tr>
+</tbody>
+</table>
+<p>For example, to set the pin <code>D6</code> in <code>PWM</code> mode, you will need to write in the characteristic value <code>0x0300</code>.</p>
+<h3 id="page_Digital_Data">Digital Data</h3>
+<p>Exposes Value attribute composed by an <em>8-bit unsigned int</em>.<br />
+Each bit represents the pin status:</p>
+<ul>
+<li>0 LOW (GND)</li>
+<li>1 HIGH (VDD).</li>
+</ul>
+<p>The write operation is performed only when the corresponding pin is set as <em>Digital Output</em> (see Pin Mode).<br />
+The read operation, on the other hand, is always possible, but the value of each bit is meaningful only if the corresponding pin is in <em>Digital Input</em> or <em>Digital Output mode</em>.<br />
+In <em>Digital Input</em> mode &quot;floating&quot; pins are read as <code>1</code>.</p>
+<p>The diagram below shows the mapping of the physical pin on the bits of the value of this feature:</p>
+<table>
+<thead>
+<tr>
+<th>Bit (position)</th>
+<th>Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>A0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>A5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>D6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>D7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Client Configuration Characteristic</strong>: this descriptor is used to activate notifications for <strong>Digital Data</strong> characteristic. The notification is sent when a pin changes its state, and sends the entire Value attribute of <strong>Digital Data</strong>. The time interval specified in the characteristic <strong>Notifind Period</strong> is ignored.</p>
+<h3 id="page_Analog_Read">Analog Read</h3>
+<p>Allows the user to read an analog value of a pin. The pin to be read is selected by the Index characteristic (see below). The Value attribute is <em>two bytes long</em>, but only the <em>last 12 bits are significant</em> and provide the ADC data.</p>
+<p><strong>Characteristic Client Configuration</strong>: see description in <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a>.</p>
+<h3 id="page_Index">Index</h3>
+<p>This value is an <em>unsigned 8 bits integer</em> field used to indicate which pin will be used in the next operation.<br />
+Allowed values from <code>0</code> to <code>7</code> (corresponding to the pin A0, A1, A2, A3, A4, A5, D6, D7) or <code>0xFF</code>, but, as indicated in the table below, not all values are allowed for both operations. It is used to read all analog pin in sequence if set to <code>0xFF</code>.<br />
+Each reading it is increased automatically, from 0 to 5.<br />
+A further reading returns the index to 0, allowing a new cycle on all pins. If Pin Mode is different from <code>10</code> (Analog mode) it will return the value 0. It should be noted that, since the operation of Analog Read and PWM Config occurs subsequently to writing Index, UDOO BLU verifies only that the value Index falls within {0-7, FF}. If operation is requested later with an Index value not legal, it is silently ignored.</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Proper Index Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analog Read</td>
+<td>0, 1, 2, 3, 4, 5, FF</td>
+</tr>
+<tr>
+<td>PWM Config</td>
+<td>0, 1, 2, 3, 4, 5, 6, 7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="page_PWM_Config">PWM Config</h3>
+<p>this characteristic is composed by two fields:</p>
+<ul>
+<li>
+<strong>Frequency</strong>: is an <em>32 bits unsigned integer</em> field used to set the PWM signal  frequency (Hz). It can vary from a minimum of <code>3</code> to a maximum of <code>24000000</code> (24 MHz). PWM signal starts immediately after the value is written. Writing <code>0</code> interrupt the signal.</li>
+<li>
+<strong>Duty cycle</strong>: is an <em>8-bit unsigned integer</em> field that is used to set the fraction of the period in which the PWM signal is high. It's percentage and vary between <code>0</code> and <code>100</code>.
+It should be noted that the signal resolution is limited by the timer length, which is equal to 24 bits. For higher frequencies, frequency and duty cycle will be rounded to the nearest binary value. For example, a signal at 24 MHz may have 0% duty cycle only, 50% or 100%.</li>
+</ul>
+<p><strong>Notifind Period</strong>: see description in <a href="Common_Characteristics_and_Notes.html">Common Characteristics and Notes</a>; the value is significant only when reading Analog pin.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../BLE_Firmware/Profile_and_Services/Button_Service.html">Previous</a></li>            <li class=Pager--next><a href="../../BLE_Firmware/Profile_and_Services/LEDs_Service.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Monday, September 18, 2017 at 10:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+    
+</body>
+</html>
